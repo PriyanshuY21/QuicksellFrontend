@@ -22,9 +22,22 @@
 }
 
 .logo-pic{
-    height: 14px;
-    width: 18px;
+    height: 16px;
+    width: 16px;
     border-radius: 50%;
+}
+
+.board-top-right .icon {
+    height: 16px; 
+    width: 16px;
+    margin: 0 4px; 
+    color: #666;
+}
+
+.board-title {
+    font-size: 16px; 
+    font-weight: bold;
+    color: #333; 
 }
 
 @media (max-width: 1200px) {

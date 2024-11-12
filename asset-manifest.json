@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/QuicksellFrontend/static/css/main.12281049.chunk.css",
+    "main.js": "/QuicksellFrontend/static/js/main.8b45c13a.chunk.js",
+    "main.js.map": "/QuicksellFrontend/static/js/main.8b45c13a.chunk.js.map",
+    "runtime~main.js": "/QuicksellFrontend/static/js/runtime~main.00465972.js",
+    "runtime~main.js.map": "/QuicksellFrontend/static/js/runtime~main.00465972.js.map",
+    "static/js/2.4c8d5b32.chunk.js": "/QuicksellFrontend/static/js/2.4c8d5b32.chunk.js",
+    "static/js/2.4c8d5b32.chunk.js.map": "/QuicksellFrontend/static/js/2.4c8d5b32.chunk.js.map",
+    "static/js/3.d3e4d6ea.chunk.js": "/QuicksellFrontend/static/js/3.d3e4d6ea.chunk.js",
+    "static/js/3.d3e4d6ea.chunk.js.map": "/QuicksellFrontend/static/js/3.d3e4d6ea.chunk.js.map",
+    "index.html": "/QuicksellFrontend/index.html",
+    "precache-manifest.bc4e356d55fe1490a767c8a9f6eac249.js": "/QuicksellFrontend/precache-manifest.bc4e356d55fe1490a767c8a9f6eac249.js",
+    "service-worker.js": "/QuicksellFrontend/service-worker.js",
+    "static/css/main.12281049.chunk.css.map": "/QuicksellFrontend/static/css/main.12281049.chunk.css.map",
+    "static/media/Backlog.svg": "/QuicksellFrontend/static/media/Backlog.47973b09.svg",
+    "static/media/Cancelled.svg": "/QuicksellFrontend/static/media/Cancelled.15c84b14.svg",
+    "static/media/Display.svg": "/QuicksellFrontend/static/media/Display.b96d92a3.svg",
+    "static/media/Done.svg": "/QuicksellFrontend/static/media/Done.ee99e204.svg",
+    "static/media/To-do.svg": "/QuicksellFrontend/static/media/To-do.991aa8ff.svg",
+    "static/media/in-progress.svg": "/QuicksellFrontend/static/media/in-progress.6f7f6c8e.svg"
+  }
+}

@@ -6,6 +6,7 @@
     width: 271px;
     box-shadow: 0px 4px 6px -1px #ccc;
 }
+
 .card-top {
     display: flex;
     align-items: center;
@@ -39,23 +40,23 @@
     gap: 7px;
 }
 
-.card-bottom .component-1 {
-    padding: 1.5px;
-    margin-top: 0.5px;
-    border: 0.5px solid #ccc;
-    border-radius: 5px;
-}
-
-.card-bottom .component-2 {
+.priority-box, .feature-box {
     display: flex;
     align-items: center;
-    margin-top: 1px;
     padding: 2px;
     border: 0.5px solid #ccc;
     border-radius: 5px;
 }
 
-.card-bottom .component-2 p {
+.priority-box {
+    margin-top: 0.5px;
+}
+
+.feature-box {
+    margin-top: 1px;
+}
+
+.feature-box p {
     color: gray;
     font-size: 12px;
     margin-top: 1px;
@@ -64,14 +65,23 @@
     margin-bottom: 2px;
 }
 
-.logo-pic{
-    margin-top: 2px;
-    height: 12px;
-    width: 15px;
+.priority-icon {
+    height: 18px;
+    width: 12px;
     border-radius: 50%;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
-.card-desc{
+.feature-icon {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.card-desc {
     font-size: 14px;
     font-weight: 500;
     align-items: left;
@@ -81,7 +91,7 @@
     margin-bottom: 2px;
 }
 
-.card-title{
+.card-title {
     color: gray;
     font-size: 14px;
     align-items: left;
@@ -89,10 +99,52 @@
     margin-bottom: 2px;
 }
 
-.icon{
+.logo-pic {
+    margin-top: 2px;
     height: 12px;
-    width: 12px;
+    width: 15px;
     border-radius: 50%;
-    margin-left: 2px;
-    margin-right: 2px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 220px;
+        padding: 12px;
+    }
+  
+    .card-middle {
+        height: auto;
+        flex-direction: column;
+        gap: 2px;
+    }
+  
+    .feature-box p {
+        font-size: 11px;
+    }
+}
+  
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        padding: 10px;
+    }
+  
+    .card-middle {
+        flex-direction: column;
+        height: auto;
+        gap: 1px;
+    }
+  
+    .card-desc {
+        font-size: 13px;
+    }
+  
+    .card-title {
+        font-size: 13px;
+    }
+  
+    .priority-icon, .feature-icon {
+        height: 10px;
+        width: 10px;
+    }
 }

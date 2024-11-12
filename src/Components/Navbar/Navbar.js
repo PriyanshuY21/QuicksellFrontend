@@ -6,13 +6,10 @@ import Display from '../Images/Display.svg';
 const Navbar = ({ sortingOption, onSortingChange, groupingOption, onGroupingChange }) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
-
-  // Toggle dropdown open/close
   const toggleDropdown = () => {
     setDropdownOpen((prev) => !prev);
   };
 
-  // Close dropdown if clicked outside
   const handleClickOutside = (event) => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
       setDropdownOpen(false);
@@ -20,11 +17,9 @@ const Navbar = ({ sortingOption, onSortingChange, groupingOption, onGroupingChan
   };
 
   useEffect(() => {
-    // Bind the event listener
     document.addEventListener('mousedown', handleClickOutside);
     return () => {
-      // Unbind the event listener on clean up
-      document.removeEventListener('mousedown', handleClickOutside);
+     document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
 

@@ -26,3 +26,53 @@
     width: 18px;
     border-radius: 50%;
 }
+
+@media (max-width: 1200px) {
+    .board {
+      min-width: 220px;
+    }
+  
+    .board-top-left {
+      gap: 5px;
+    }
+  
+    .logo-pic {
+      height: 12px;
+      width: 16px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .board {
+      min-width: 100%;
+    }
+  
+    .board-top {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+    }
+  
+    .board-top-right {
+      display: flex;
+      gap: 5px;
+    }
+  
+    .card-container {
+      gap: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .board-top {
+      padding: 10px 0;
+    }
+  
+    .board-title {
+      font-size: 16px;
+    }
+  
+    .board-count {
+      font-size: 14px;
+    }
+  }

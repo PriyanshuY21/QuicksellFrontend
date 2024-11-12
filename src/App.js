@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import './App.css';
-
+import Urgent from "./Components/Images/SVG - Urgent Priority colour.svg";
+import Nope from "./Components/Images/No-priority.svg";
+import Low from "./Components/Images/Img - Low Priority.svg";
+import Medium from "./Components/Images/Img - Medium Priority.svg";
+import High from "./Components/Images/Img - High Priority.svg";
 import Navbar from "./Components/Navbar/Navbar";
 import Board from "./Components/Board/Board";
 import axios from "axios"; 
@@ -17,27 +21,27 @@ function App() {
   const priorityLabels = {
     0:(
       <div className="user-label">
-      <img src="https://cdn-icons-png.flaticon.com/128/9974/9974563.png" className='user-pic' alt="No Priority" />  No Priority
+      <img src={Nope} className='user-pic' alt="No Priority" />  No Priority
       </div>
     ),
     2:(
       <div className="user-label">
-      <img src={process.env.PUBLIC_URL + "/l.jpg"} className='user-pic' alt="Low" />  Low
+      <img src={Low} className='user-pic' alt="Low" />  Low
       </div>
     ),
     3:(
       <div className="user-label">
-      <img src={process.env.PUBLIC_URL + "/m.jpg"} className='user-pic' alt="Medium" />  Medium
+      <img src={Medium} className='user-pic' alt="Medium" />  Medium
       </div>
     ), 
     4:(
       <div className="user-label">
-      <img src={process.env.PUBLIC_URL + "/h.jpg"}  className='user-pic' alt="High" />  High
+      <img src={High}  className='user-pic' alt="High" />  High
       </div>
     ),  
     1:(
       <div className="user-label">
-      <img src="https://cdn-icons-png.flaticon.com/128/6324/6324052.png" className='user-pic' alt="Urgent" />  Urgent
+      <img src={Urgent} className='user-pic' alt="Urgent" />  Urgent
       </div>
     )
   };
